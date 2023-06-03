@@ -1,0 +1,49 @@
+<!--bootstrap-->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+<!-- ここからHTMLを記述してください。 -->
+<section>
+    <header>
+        <h1 id="header_line">Buttery Finder Program</p>
+    </header>
+</section>
+
+<section>
+    <div class="selection_area" id="bland">
+        <label for="select_bland"><p>step1: Select Your Bland</p></label>
+        <select class="select" id="select_bland">
+            <option value="Cakon">Cakon</option>
+            <option value="Go MN">Go MN</option>
+            <option value="VANY">VANY</option>
+        </select>
+    </div>
+
+    <div class="selection_area" id= "model">
+        <label for="select_model">
+            <p>step2: Select Your Model</p>
+        </label>
+        <select class="select" id="select_model">
+            <option value="ABC 9000M">ABC 9000M</option>
+        </select>
+    </div>
+
+    <div class="selection_area" id="consumption">
+        <label for="num_consumption"><p>step3: Input Accessory Consumption</p>
+        <input type="number" id="num_consumption" value="50">
+    </div>
+
+    <div class="selection_area" id= "buttery">
+        <p>step4: Chooose Your Buttery</p>
+        <div id="butteryfield">
+            <div>
+                <div class="cameraName">name</div>
+                <div class="timeButteryLimit">hours</div>
+            </div>
+            
+            <div>
+                <div class="cameraName">name</div>
+                <div class="timeButteryLimit">hours</div>
+            </div>
+        </div>
+    </div>
+</section>
