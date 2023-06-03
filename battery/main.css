@@ -1,0 +1,73 @@
+/* ここからCSSを記述してください。 */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: cornflowerblue;
+    height: 25vh;
+}
+
+@media (min-width: 400px) {
+  header {
+    height: 4rem;
+  }
+}
+.selection_area label p {
+    padding-top: 1rem;
+    margin-bottom: 0;
+}
+
+#header_line{
+    text-align: center;
+    color: white;
+    padding-top: 2vh;
+}
+
+.selection_area{
+    display: flex;
+    flex-direction:column;
+    justify-content: start;
+    padding-left: 3rem;
+}
+
+#select_bland{
+    width: 6rem;
+}
+
+#select_model{
+    width: 7rem;
+}
+
+#num_consumption{
+    width: 5rem;
+}
+
+
+
+#butteryfield > div{
+    border: solid;
+    border-width: thin;
+    display: flex;
+    justify-content: space-between;
+    margin-right: 4rem;
+    padding: 0 1rem;
+    height: 15vh;
+}
+
+
+.cameraName{
+    margin-top: auto;
+    margin-bottom: auto;
+    font-weight: bold;
+}
+
+.timeButteryLimit{
+    margin-top: auto;
+    margin-bottom: auto;
+}
