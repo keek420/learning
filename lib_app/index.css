@@ -1,0 +1,82 @@
+*{
+    margin:0;
+    padding: 0;
+}
+
+
+header{
+    width: 100%;
+    height: 10%;
+    background-color: darkslategrey
+
+}
+
+/*ヘッダー関連*/
+#header-contents{
+    padding: 3% 10%;
+}
+
+#search-title{
+    display: flex;
+    font-weight: bolder;
+    color: white;
+    margin-bottom: 10px;
+}
+
+#search-icon{
+    margin-right: 5px;
+}
+
+#search-bar{
+    display: flex;
+    align-items: center;
+}
+
+#search-input{
+    width: 90%;
+    height: 100%;
+    font-size: 27px;
+}
+
+#search-btn{
+    background-color: #3498db; /* ボタンの背景色を設定 */
+    color: #fff; /* ボタンのテキスト色を設定 */
+    border: none; /* ボーダーを削除 */
+    cursor: pointer; /* カーソルをポインターに設定 */
+    padding: 8px 12px; /* パディングを追加 */
+    width: auto;
+    height:  100%;
+}
+
+/*ユーザ情報表示部*/
+
+#book-profile{
+    padding: 0 20%;
+}
+
+#result{
+    height: 10px;
+    padding: 20px;
+}
+
+#book-profile-card{
+    padding: 0 20px;
+}
+
+
+.profile-row{
+    margin: 10px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.profile-row > *{
+    margin: auto;
+    width: 100%;
+}
+
+/* 偶数個目の .profile-row の背景を別の色に設定 */
+.profile-row:nth-child(even) {
+  background-color: #a8a8a8; /* 他の背景色 */
+}
+
