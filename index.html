@@ -1,25 +1,100 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html lang="en">
 <head>
-    <title>tic-tac-toe</title>
-    <style>
-        .cell {
-            height: 60px;
-            width: 60px;
-            border: 1px solid;
-            text-align: center;
-            vertical-align: middle;
-            line-height: 60px;
-            cursor: pointer;
-        }
-        .row {
-            display: flex;
-        }
-    </style>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="index.css">
+    <script rel="text/javascript" src="src.js"></script>
+    <!-- font awesome -->
+    <link href="https://use.fontawesome.com/releases/v5.12.0/css/all.css" rel="stylesheet">
 </head>
+
+<title>Book Generator</title>
+
+<!-- ここから書き始めてください。 -->
+
 <body>
-    <div id="board"></div>
-    <button id="reset">リセット</button>
-    <script src="matrix.js"></script>
+
+    <header>
+
+        <!-- ヘッダはタイトルと検索バーから構成 -->
+        <div id="header-contents">
+            <div id="search-title">
+                    <h1 >
+                        <i id="search-icon" class="fas fa-solid fa-book"></i>
+                        Recursion Library
+                    </h1>
+            </div>
+            <div id="search-bar">
+                <input id="search-input" type="text" placeholder="search">
+                <button type="submit" id="search-btn">
+                    <i class="fas fa-solid fa-search"></i>
+                </button> 
+            </div>
+
+        </div>
+    </header>
+    
+    <!--本の情報を表示するところ -->
+    <div id="book-profile">
+        <div id="result">
+            <p>result</p>
+        </div>
+        <!-- 本情報表示カード部-->
+        <div id="book-profile-card">
+            
+            <!-- タイトル、作者、値段の基本情報部 -->
+            <div class="profile-row">
+
+                <div id="profile-item"></div>
+
+                <div id="profile-data">
+                    <h2 id="title">fa</h2>
+                    <p id="author">hab</p>
+                    <p id="price">2999</p>
+                    <p id="discription">good</p>
+                </div>
+            </div>
+            <!-- ページ数　-->
+            <div class="profile-row">
+                <div class="profile-item">
+                    <h3>Page</h3>
+                </div>
+                <div class="profile-data" id="page-data">
+                    010
+                </div>
+            </div>
+            <!-- 出版社　-->
+            <div class="profile-row">
+                <div class="profile-item">
+                    <h3>Publisher</h3>
+                </div>
+                <div class="profile-data">
+                    syuu
+                </div>
+            </div>
+            <!-- 出版日　-->
+            <div class="profile-row">
+                <div class="profile-item">
+                    <h3>Publish Date</h3>
+                </div>
+                <div class="profile-data">
+                    20000000
+                </div>
+            </div>
+            <!-- カテゴリ　-->
+            <div class="profile-row">
+                <div class="profile-item">
+                    <h3>Categories</h3>
+                </div>
+                <div class="profile-data">
+                    history
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
-</html>
